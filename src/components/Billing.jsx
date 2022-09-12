@@ -3,7 +3,7 @@ import Apple from "../../public/assets/apple.svg";
 import Google from "../../public/assets/google.svg";
 import building from "/public/assets/building-facility.png";
 
-import styles, { layout } from "../pages/style";
+import styles, { layout } from "../styles/style";
 
 const Billing = () => (
   <section id="product" className={layout.sectionReverse}>

@@ -1,5 +1,5 @@
 import { stats } from "../constants";
-import styles from "../pages/style";
+import styles from "../styles/style";
 
 const Stats = () => (
   <section className={`${styles.flexCenter} flex-row flex-wrap sm:mb-20 mb-6`}>

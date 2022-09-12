@@ -35,14 +35,11 @@ __webpack_require__.a(module, async (__webpack_handle_async_dependencies__, __we
 /* harmony export */   "o4": () => (/* binding */ setToken)
 /* harmony export */ });
 /* unused harmony exports getTokenFromLocalCookie, getIdFromLocalCookie, getIdFromServerCookie */
-/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1853);
-/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var js_cookie__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(9915);
-/* harmony import */ var _api__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(3156);
-var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([js_cookie__WEBPACK_IMPORTED_MODULE_1__]);
-js_cookie__WEBPACK_IMPORTED_MODULE_1__ = (__webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__)[0];
+/* harmony import */ var js_cookie__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(9915);
+/* harmony import */ var _api__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(3156);
+var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([js_cookie__WEBPACK_IMPORTED_MODULE_0__]);
+js_cookie__WEBPACK_IMPORTED_MODULE_0__ = (__webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__)[0];
 /* eslint-disable consistent-return */
-
 
 
 const setToken = data => {
@@ -50,29 +47,29 @@ const setToken = data => {
     return;
   }
 
-  js_cookie__WEBPACK_IMPORTED_MODULE_1__["default"].set("id", data.user.id);
-  js_cookie__WEBPACK_IMPORTED_MODULE_1__["default"].set("username", data.user.username);
-  js_cookie__WEBPACK_IMPORTED_MODULE_1__["default"].set("jwt", data.jwt);
-  js_cookie__WEBPACK_IMPORTED_MODULE_1__["default"].set("isLogin", true);
+  js_cookie__WEBPACK_IMPORTED_MODULE_0__["default"].set("id", data.user.id);
+  js_cookie__WEBPACK_IMPORTED_MODULE_0__["default"].set("username", data.user.username);
+  js_cookie__WEBPACK_IMPORTED_MODULE_0__["default"].set("jwt", data.jwt);
+  js_cookie__WEBPACK_IMPORTED_MODULE_0__["default"].set("isLogin", true);
 };
 const unsetToken = () => {
   if (true) {
     return;
   }
 
-  js_cookie__WEBPACK_IMPORTED_MODULE_1__["default"].remove("id");
-  js_cookie__WEBPACK_IMPORTED_MODULE_1__["default"].remove("jwt");
-  js_cookie__WEBPACK_IMPORTED_MODULE_1__["default"].remove("username");
-  js_cookie__WEBPACK_IMPORTED_MODULE_1__["default"].remove("isLogin");
+  js_cookie__WEBPACK_IMPORTED_MODULE_0__["default"].remove("id");
+  js_cookie__WEBPACK_IMPORTED_MODULE_0__["default"].remove("jwt");
+  js_cookie__WEBPACK_IMPORTED_MODULE_0__["default"].remove("username");
+  js_cookie__WEBPACK_IMPORTED_MODULE_0__["default"].remove("isLogin");
 };
 const getTokenFromLocalCookie = () => {
-  return js_cookie__WEBPACK_IMPORTED_MODULE_1__["default"].get("jwt");
+  return js_cookie__WEBPACK_IMPORTED_MODULE_0__["default"].get("jwt");
 };
 const getUserFromLocalCookie = () => {
   const jwt = getTokenFromLocalCookie();
 
   if (jwt) {
-    return (0,_api__WEBPACK_IMPORTED_MODULE_2__/* .fetcher */ ._)(`${"http://localhost:1337/api"}/users/me`, {
+    return (0,_api__WEBPACK_IMPORTED_MODULE_1__/* .fetcher */ ._)(`${"http://localhost:1337/api"}/users/me`, {
       headers: {
         "Content-Type": "application/json",
         Authorization: `Bearer ${jwt}`

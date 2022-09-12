@@ -1,9 +1,9 @@
 "use strict";
-exports.id = 225;
-exports.ids = [225,472];
+exports.id = 644;
+exports.ids = [644];
 exports.modules = {
 
-/***/ 5225:
+/***/ 1644:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 // ESM COMPAT FLAG
@@ -14,8 +14,27 @@ __webpack_require__.d(__webpack_exports__, {
   "default": () => (/* binding */ pages_App)
 });
 
-// EXTERNAL MODULE: ./src/pages/style.js
-var style = __webpack_require__(8293);
+;// CONCATENATED MODULE: ./src/styles/style.js
+const style_styles = {
+  boxWidth: "xl:max-w-[1280px] w-full",
+  heading2: "font-poppins font-semibold xs:text-[48px] text-[40px] text-white xs:leading-[76.8px] leading-[66.8px] w-full",
+  paragraph: "font-poppins font-normal text-dimWhite text-[18px] leading-[30.8px]",
+  flexCenter: "flex justify-center items-center",
+  flexStart: "flex justify-center items-start",
+  paddingX: "sm:px-16 px-6",
+  paddingY: "sm:py-16 py-6",
+  padding: "sm:px-16 px-6 sm:py-12 py-4",
+  marginX: "sm:mx-16 mx-6",
+  marginY: "sm:my-16 my-6"
+};
+const style_layout = {
+  section: `flex md:flex-row flex-col ${style_styles.paddingY}`,
+  sectionReverse: `flex md:flex-row flex-col-reverse ${style_styles.paddingY}`,
+  sectionImgReverse: `flex-1 flex ${style_styles.flexCenter} md:mr-10 mr-0 md:mt-0 mt-10 relative`,
+  sectionImg: `flex-1 flex ${style_styles.flexCenter} md:ml-10 ml-0 md:mt-0 mt-10 relative`,
+  sectionInfo: `flex-1 ${style_styles.flexStart} flex-col`
+};
+/* harmony default export */ const style = (style_styles);
 // EXTERNAL MODULE: external "react"
 var external_react_ = __webpack_require__(6689);
 // EXTERNAL MODULE: ./node_modules/next/image.js
@@ -1147,9 +1166,9 @@ Google.defaultProps = {
 
 const Billing = () => /*#__PURE__*/(0,jsx_runtime_.jsxs)("section", {
   id: "product",
-  className: style.layout.sectionReverse,
+  className: style_layout.sectionReverse,
   children: [/*#__PURE__*/(0,jsx_runtime_.jsxs)("div", {
-    className: style.layout.sectionImgReverse,
+    className: style_layout.sectionImgReverse,
     children: [/*#__PURE__*/jsx_runtime_.jsx("div", {
       className: "w-[100%] h-[100%] relative z-[5]",
       children: /*#__PURE__*/jsx_runtime_.jsx((image_default()), {
@@ -1161,14 +1180,14 @@ const Billing = () => /*#__PURE__*/(0,jsx_runtime_.jsxs)("section", {
       className: "absolute z-[0] w-[50%] h-[50%] -left-1/2 bottom-0 rounded-full pink__gradient"
     })]
   }), /*#__PURE__*/(0,jsx_runtime_.jsxs)("div", {
-    className: style.layout.sectionInfo,
+    className: style_layout.sectionInfo,
     children: [/*#__PURE__*/(0,jsx_runtime_.jsxs)("h2", {
-      className: style["default"].heading2,
+      className: style.heading2,
       children: ["Easily control with your ", /*#__PURE__*/jsx_runtime_.jsx("br", {
         className: "sm:block hidden"
       }), " Web & Mobile Phone"]
     }), /*#__PURE__*/jsx_runtime_.jsx("p", {
-      className: `${style["default"].paragraph} max-w-[470px] mt-5`,
+      className: `${style.paragraph} max-w-[470px] mt-5`,
       children: "You can use our service with your Web and also mobile phone. Espacially, mobile environment will gives you a great efficiency to do your work."
     }), /*#__PURE__*/(0,jsx_runtime_.jsxs)("div", {
       className: "flex flex-row flex-wrap sm:mt-10 mt-6",
@@ -1238,7 +1257,7 @@ const FeatureCard = ({
 }) => /*#__PURE__*/(0,jsx_runtime_.jsxs)("div", {
   className: `flex flex-row p-6 rounded-[20px] ${index !== features.length - 1 ? "mb-6" : "mb-0"} feature-card`,
   children: [/*#__PURE__*/jsx_runtime_.jsx("div", {
-    className: `w-[64px] h-[64px] rounded-full ${style["default"].flexCenter} bg-dimBlue`,
+    className: `w-[64px] h-[64px] rounded-full ${style.flexCenter} bg-dimBlue`,
     children: /*#__PURE__*/jsx_runtime_.jsx("div", {
       className: "w-[50%] h-[50%] object-contain",
       children: icon
@@ -1257,22 +1276,22 @@ const FeatureCard = ({
 
 const Business = () => /*#__PURE__*/(0,jsx_runtime_.jsxs)("section", {
   id: "features",
-  className: style.layout.section,
+  className: style_layout.section,
   children: [/*#__PURE__*/(0,jsx_runtime_.jsxs)("div", {
-    className: style.layout.sectionInfo,
+    className: style_layout.sectionInfo,
     children: [/*#__PURE__*/(0,jsx_runtime_.jsxs)("h2", {
-      className: style["default"].heading2,
+      className: style.heading2,
       children: ["Make your own procedure template. ", /*#__PURE__*/jsx_runtime_.jsx("br", {
         className: "sm:block hidden"
       }), " It will gives you efficiency."]
     }), /*#__PURE__*/jsx_runtime_.jsx("p", {
-      className: `${style["default"].paragraph} max-w-[470px] mt-5`,
+      className: `${style.paragraph} max-w-[470px] mt-5`,
       children: "With the DX Maintenance, you can improve your management by creating procedure template, work orders."
     }), /*#__PURE__*/jsx_runtime_.jsx(components_Button, {
       styles: `py-4 px-6 font-poppins font-medium text-[18px] text-primary bg-blue-gradient rounded-[10px] outline-none mt-10`
     })]
   }), /*#__PURE__*/jsx_runtime_.jsx("div", {
-    className: `${style.layout.sectionImg} flex-col`,
+    className: `${style_layout.sectionImg} flex-col`,
     children: features.map((feature, index) => /*#__PURE__*/jsx_runtime_.jsx(FeatureCard, Business_objectSpread(Business_objectSpread({}, feature), {}, {
       index: index
     }), feature.id))
@@ -1309,18 +1328,18 @@ const Clients = () => /*#__PURE__*/_jsx("section", {
 
 
 const CTA = () => /*#__PURE__*/(0,jsx_runtime_.jsxs)("section", {
-  className: `${style["default"].flexCenter} ${style["default"].marginY} ${style["default"].padding} sm:flex-row flex-col bg-black-gradient-2 rounded-[20px] box-shadow`,
+  className: `${style.flexCenter} ${style.marginY} ${style.padding} sm:flex-row flex-col bg-black-gradient-2 rounded-[20px] box-shadow`,
   children: [/*#__PURE__*/(0,jsx_runtime_.jsxs)("div", {
     className: "flex-1 flex flex-col",
     children: [/*#__PURE__*/jsx_runtime_.jsx("h2", {
-      className: style["default"].heading2,
+      className: style.heading2,
       children: "Let\u2019s try our service now!"
     }), /*#__PURE__*/jsx_runtime_.jsx("p", {
-      className: `${style["default"].paragraph} max-w-[470px] mt-5`,
+      className: `${style.paragraph} max-w-[470px] mt-5`,
       children: "Stop wasting time looking for gear or figuring out who\u2019s using it. All your information is stored and updated in our solution."
     })]
   }), /*#__PURE__*/jsx_runtime_.jsx("div", {
-    className: `${style["default"].flexCenter} sm:ml-10 ml-0 sm:mt-0 mt-10`,
+    className: `${style.flexCenter} sm:ml-10 ml-0 sm:mt-0 mt-10`,
     children: /*#__PURE__*/jsx_runtime_.jsx((link_default()), {
       href: "/auth/login",
       children: /*#__PURE__*/jsx_runtime_.jsx("a", {
@@ -1340,7 +1359,7 @@ const CTA = () => /*#__PURE__*/(0,jsx_runtime_.jsxs)("section", {
 
 
 const Stats = () => /*#__PURE__*/jsx_runtime_.jsx("section", {
-  className: `${style["default"].flexCenter} flex-row flex-wrap sm:mb-20 mb-6`,
+  className: `${style.flexCenter} flex-row flex-wrap sm:mb-20 mb-6`,
   children: stats.map(stat => /*#__PURE__*/(0,jsx_runtime_.jsxs)("div", {
     className: `flex-1 flex justify-start items-center flex-row m-3`,
     children: [/*#__PURE__*/jsx_runtime_.jsx("h4", {
@@ -1363,9 +1382,9 @@ const Stats = () => /*#__PURE__*/jsx_runtime_.jsx("section", {
 
 
 const Footer = () => /*#__PURE__*/(0,jsx_runtime_.jsxs)("section", {
-  className: `${style["default"].flexCenter} ${style["default"].paddingY} flex-col`,
+  className: `${style.flexCenter} ${style.paddingY} flex-col`,
   children: [/*#__PURE__*/(0,jsx_runtime_.jsxs)("div", {
-    className: `${style["default"].flexStart} md:flex-row flex-col mb-8 w-full`,
+    className: `${style.flexStart} md:flex-row flex-col mb-8 w-full`,
     children: [/*#__PURE__*/(0,jsx_runtime_.jsxs)("div", {
       className: "flex-[1] flex flex-col justify-start mr-10",
       children: [/*#__PURE__*/jsx_runtime_.jsx("div", {
@@ -1374,7 +1393,7 @@ const Footer = () => /*#__PURE__*/(0,jsx_runtime_.jsxs)("section", {
           src: logo
         })
       }), /*#__PURE__*/jsx_runtime_.jsx("p", {
-        className: `${style["default"].paragraph} mt-4 max-w-[312px]`,
+        className: `${style.paragraph} mt-4 max-w-[312px]`,
         children: "A new way to manage your facilities easy, reliable and secure."
       })]
     }), /*#__PURE__*/jsx_runtime_.jsx("div", {
@@ -1510,20 +1529,20 @@ function Testimonials_defineProperty(obj, key, value) { if (key in obj) { Object
 
 const Testimonials = () => /*#__PURE__*/(0,jsx_runtime_.jsxs)("section", {
   id: "clients",
-  className: `${style["default"].paddingY} ${style["default"].flexCenter} flex-col relative `,
+  className: `${style.paddingY} ${style.flexCenter} flex-col relative `,
   children: [/*#__PURE__*/jsx_runtime_.jsx("div", {
     className: "absolute z-[0] w-[60%] h-[60%] -right-[50%] rounded-full blue__gradient bottom-40"
   }), /*#__PURE__*/(0,jsx_runtime_.jsxs)("div", {
     className: "w-full flex justify-between items-center md:flex-row flex-col sm:mb-16 mb-6 relative z-[1]",
     children: [/*#__PURE__*/(0,jsx_runtime_.jsxs)("h2", {
-      className: style["default"].heading2,
+      className: style.heading2,
       children: ["Here's our Customer. ", /*#__PURE__*/jsx_runtime_.jsx("br", {
         className: "sm:block hidden"
       }), " They talk about us"]
     }), /*#__PURE__*/jsx_runtime_.jsx("div", {
       className: "w-full md:mt-0 mt-6",
       children: /*#__PURE__*/jsx_runtime_.jsx("p", {
-        className: `${style["default"].paragraph} text-left max-w-[450px]`,
+        className: `${style.paragraph} text-left max-w-[450px]`,
         children: "After using our service, many customers leave a comment for us. Let's take a look."
       })
     })]
@@ -1566,11 +1585,11 @@ ArrowUp.defaultProps = {
 };
 
 const GetStarted = () => /*#__PURE__*/jsx_runtime_.jsx("div", {
-  className: `${style["default"].flexCenter} w-[140px] h-[140px] rounded-full bg-blue-gradient p-[2px] cursor-pointer`,
+  className: `${style.flexCenter} w-[140px] h-[140px] rounded-full bg-blue-gradient p-[2px] cursor-pointer`,
   children: /*#__PURE__*/(0,jsx_runtime_.jsxs)("div", {
-    className: `${style["default"].flexCenter} flex-col bg-primary w-[100%] h-[100%] rounded-full`,
+    className: `${style.flexCenter} flex-col bg-primary w-[100%] h-[100%] rounded-full`,
     children: [/*#__PURE__*/(0,jsx_runtime_.jsxs)("div", {
-      className: `${style["default"].flexStart} flex-row`,
+      className: `${style.flexStart} flex-row`,
       children: [/*#__PURE__*/jsx_runtime_.jsx("p", {
         className: "font-poppins font-medium text-[18px] leading-[23.4px]",
         children: /*#__PURE__*/jsx_runtime_.jsx("span", {
@@ -1604,9 +1623,9 @@ const GetStarted = () => /*#__PURE__*/jsx_runtime_.jsx("div", {
 const Hero = () => {
   return /*#__PURE__*/(0,jsx_runtime_.jsxs)("section", {
     id: "home",
-    className: `flex md:flex-row flex-col ${style["default"].paddingY}`,
+    className: `flex md:flex-row flex-col ${style.paddingY}`,
     children: [/*#__PURE__*/(0,jsx_runtime_.jsxs)("div", {
-      className: `flex-1 ${style["default"].flexStart} flex-col xl:px-0 sm:px-16 px-6`,
+      className: `flex-1 ${style.flexStart} flex-col xl:px-0 sm:px-16 px-6`,
       children: [/*#__PURE__*/jsx_runtime_.jsx("div", {
         className: "flex flex-row justify-between items-center w-full",
         children: /*#__PURE__*/(0,jsx_runtime_.jsxs)("h1", {
@@ -1622,11 +1641,11 @@ const Hero = () => {
         className: "font-poppins font-semibold ss:text-[68px] text-[52px] text-white ss:leading-[100.8px] leading-[75px] w-full",
         children: "Efficiently"
       }), /*#__PURE__*/(0,jsx_runtime_.jsxs)("p", {
-        className: `${style["default"].paragraph} max-w-[470px] mt-5`,
+        className: `${style.paragraph} max-w-[470px] mt-5`,
         children: ["DX Maintenance is the brand new solution to manage your facilities and assets. ", /*#__PURE__*/jsx_runtime_.jsx("br", {}), "DX Maintenance gives every Maintenance and Reliability team the tools and information they need to run Operations efficiently and effectively."]
       })]
     }), /*#__PURE__*/(0,jsx_runtime_.jsxs)("div", {
-      className: `flex-1 flex ${style["default"].flexCenter} md:my-0 my-10 relative`,
+      className: `flex-1 flex ${style.flexCenter} md:my-0 my-10 relative`,
       children: [/*#__PURE__*/jsx_runtime_.jsx("div", {
         className: "w-[100%] h-[100%] relative z-[5]",
         alt: "billing",
@@ -1641,7 +1660,7 @@ const Hero = () => {
         className: "absolute z-[0] w-[50%] h-[50%] right-20 bottom-20 blue__gradient"
       })]
     }), /*#__PURE__*/jsx_runtime_.jsx("div", {
-      className: `ss:hidden ${style["default"].flexCenter}`,
+      className: `ss:hidden ${style.flexCenter}`,
       children: /*#__PURE__*/jsx_runtime_.jsx(components_GetStarted, {})
     })]
   });
@@ -1669,58 +1688,27 @@ const Hero = () => {
 const App = () => /*#__PURE__*/(0,jsx_runtime_.jsxs)("div", {
   className: "bg-primary w-full overflow-hidden",
   children: [/*#__PURE__*/jsx_runtime_.jsx("div", {
-    className: `${style["default"].paddingX} ${style["default"].flexCenter}`,
+    className: `${style.paddingX} ${style.flexCenter}`,
     children: /*#__PURE__*/jsx_runtime_.jsx("div", {
-      className: `${style["default"].boxWidth}`,
+      className: `${style.boxWidth}`,
       children: /*#__PURE__*/jsx_runtime_.jsx(components_Navbar, {})
     })
   }), /*#__PURE__*/jsx_runtime_.jsx("div", {
-    className: `bg-primary ${style["default"].flexStart}`,
+    className: `bg-primary ${style.flexStart}`,
     children: /*#__PURE__*/jsx_runtime_.jsx("div", {
-      className: `${style["default"].boxWidth}`,
+      className: `${style.boxWidth}`,
       children: /*#__PURE__*/jsx_runtime_.jsx(components_Hero, {})
     })
   }), /*#__PURE__*/jsx_runtime_.jsx("div", {
-    className: `bg-primary ${style["default"].paddingX} ${style["default"].flexCenter}`,
+    className: `bg-primary ${style.paddingX} ${style.flexCenter}`,
     children: /*#__PURE__*/(0,jsx_runtime_.jsxs)("div", {
-      className: `${style["default"].boxWidth}`,
+      className: `${style.boxWidth}`,
       children: [/*#__PURE__*/jsx_runtime_.jsx(components_Stats, {}), /*#__PURE__*/jsx_runtime_.jsx(components_Business, {}), /*#__PURE__*/jsx_runtime_.jsx(components_Billing, {}), /*#__PURE__*/jsx_runtime_.jsx(components_Testimonials, {}), /*#__PURE__*/jsx_runtime_.jsx(components_CTA, {}), /*#__PURE__*/jsx_runtime_.jsx(components_Footer, {})]
     })
   })]
 });
 
 /* harmony default export */ const pages_App = (App);
-
-/***/ }),
-
-/***/ 8293:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__),
-/* harmony export */   "layout": () => (/* binding */ layout)
-/* harmony export */ });
-const styles = {
-  boxWidth: "xl:max-w-[1280px] w-full",
-  heading2: "font-poppins font-semibold xs:text-[48px] text-[40px] text-white xs:leading-[76.8px] leading-[66.8px] w-full",
-  paragraph: "font-poppins font-normal text-dimWhite text-[18px] leading-[30.8px]",
-  flexCenter: "flex justify-center items-center",
-  flexStart: "flex justify-center items-start",
-  paddingX: "sm:px-16 px-6",
-  paddingY: "sm:py-16 py-6",
-  padding: "sm:px-16 px-6 sm:py-12 py-4",
-  marginX: "sm:mx-16 mx-6",
-  marginY: "sm:my-16 my-6"
-};
-const layout = {
-  section: `flex md:flex-row flex-col ${styles.paddingY}`,
-  sectionReverse: `flex md:flex-row flex-col-reverse ${styles.paddingY}`,
-  sectionImgReverse: `flex-1 flex ${styles.flexCenter} md:mr-10 mr-0 md:mt-0 mt-10 relative`,
-  sectionImg: `flex-1 flex ${styles.flexCenter} md:ml-10 ml-0 md:mt-0 mt-10 relative`,
-  sectionInfo: `flex-1 ${styles.flexStart} flex-col`
-};
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (styles);
 
 /***/ })
 

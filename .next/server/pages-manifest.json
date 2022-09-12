@@ -1,16 +1,16 @@
 {
   "/_app": "pages/_app.js",
+  "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/auth/login": "pages/auth/login.js",
-  "/App": "pages/App.js",
-  "/auth/register": "pages/auth/register.js",
-  "/main/categories": "pages/main/categories.js",
-  "/": "pages/index.js",
-  "/main/procedures": "pages/main/procedures.js",
-  "/main/settings": "pages/main/settings.js",
-  "/style": "pages/style.js",
-  "/main/users": "pages/main/users.js",
-  "/main/workorders": "pages/main/workorders.js",
+  "/auth/login": "pages/auth/login.html",
+  "/App": "pages/App.html",
+  "/auth/register": "pages/auth/register.html",
+  "/": "pages/index.html",
+  "/main/categories": "pages/main/categories.html",
+  "/main/settings": "pages/main/settings.html",
+  "/main/procedures": "pages/main/procedures.html",
+  "/main/users": "pages/main/users.html",
+  "/main/workorders": "pages/main/workorders.html",
   "/main/home": "pages/main/home.js",
-  "/_error": "pages/_error.js"
+  "/404": "pages/404.html"
 }

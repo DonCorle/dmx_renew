@@ -1,5 +1,5 @@
 import Image from "next/image";
-import styles from "../pages/style";
+import styles from "../styles/style";
 import logo from "/public/assets/logo.png";
 import { footerLinks } from "../constants";
 

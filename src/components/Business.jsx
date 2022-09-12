@@ -1,5 +1,5 @@
 import { features } from "../constants";
-import styles, { layout } from "../pages/style";
+import styles, { layout } from "../styles/style";
 import Button from "./Button";
 
 const FeatureCard = ({ icon, title, content, index }) => (

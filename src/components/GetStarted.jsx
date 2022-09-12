@@ -1,4 +1,4 @@
-import styles from "../pages/style";
+import styles from "../styles/style";
 import ArrowUp from "../../public/assets/arrow-up.svg";
 const GetStarted = () => (
   <div

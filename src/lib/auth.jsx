@@ -1,5 +1,4 @@
 /* eslint-disable consistent-return */
-import Router from "next/router";
 import Cookies from "js-cookie";
 import { fetcher } from "./api";
 

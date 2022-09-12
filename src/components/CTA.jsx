@@ -1,4 +1,4 @@
-import styles from "../pages/style";
+import styles from "../styles/style";
 import Link from "next/link";
 import Button from "./Button";
 

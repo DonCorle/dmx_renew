@@ -1,5 +1,5 @@
 import Image from "next/image";
-import styles from "../pages/style";
+import styles from "../styles/style";
 import vision from "/public/assets/vision.png";
 import GetStarted from "./GetStarted";
 
