@@ -1,7 +1,7 @@
 /* eslint-disable */
-import LayoutAuth from "../../Components/Auth/LayoutAuth";
+import LayoutAuth from "../../components/Auth/LayoutAuth";
 import { useFetchUser } from "../../lib/authContext";
-import { default as RegisterComponent } from "../../Components/Auth/Register";
+import { default as RegisterComponent } from "../../components/Auth/Register";
 
 const Register = () => {
   const { user } = useFetchUser();
