@@ -1,4 +1,4 @@
-import Star from "../../public/assets/star.svg";
+import Star from "../../public/assets/Star.svg";
 import Shield from "../../public/assets/Shield.svg";
 import Send from "../../public/assets/Send.svg";
 import People01 from "../../public/assets/people01.png";
